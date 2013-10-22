@@ -1,0 +1,13 @@
+title: Pervasive Forum
+desc:  Shows specified forums in each folder or each subfolder.
+author: Oliver Riesen <oliver@riesen.org>
+url: http://www.phorum.org/phorum5/read.php?62,129915
+category: phorum3conversion
+category: viewlayout
+required_version: 5.2.0
+version: 1.0.0
+
+run hook index before *
+
+hook: index|mod_pervasive_forum_index
+hook: sanity_checks|mod_pervasive_forum_sanity_checks

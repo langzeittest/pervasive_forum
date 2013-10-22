@@ -1,0 +1,172 @@
+Module: Pervasive Forum
+Author: Oliver Riesen <oliver@riesen.org>
+
+Shows specified forums in each folder or each subfolder.
+
+In Phorum3 were two corresponding display options for forums called "Show in each
+folder" and "Show also in each subfolder".
+
+Tested on version 5.2.7 with "Directory Structure" and "Flat Structure".
+
+
+License:
+-------
+
+Free to use, modify, or redistribute this code so long as I am given credit for
+the original development somewhere. This code comes with absolutly no warranty.
+
+
+Installation:
+------------
+
+1. Unpack the archive.
+
+2. Move the directory "pervasive_forum" to the directory "mods" within your
+   Phorum installation. Don't change the directory name!
+
+3. Login as administrator in Phorum's administrative interface and go to the
+   "Modules" section.
+
+4. Enable the module "Pervasive Forum".
+
+5. Go to the settings screen for the module to make forums pervasive.
+
+
+Module settings:
+---------------
+
+== Define forum display options
+
+To make a forum pervasive select "Show in each folder" or "Show in each subfolder".
+
+Default value is no selection.
+
+
+Language support:
+----------------
+
+This module doesn't contain any language text.
+
+
+Sanity Checks:
+-------------
+
+If you have problems with this module login as administrator in Phorum's
+administrative interface and go to the "System Sanity Checks" section. Check
+for warnings or errors for the Pervasive Forum Module.
+
+
+Example:
+-------
+
+Example for a normal structure of folders and forums (without pervasive
+forums):
+
+Root
+|
++-- Announcements
+|
++-- Ford
+|   |
+|   +-- Dealers and garages
+|   |
+|   +-- Focus
+|   |   |
+|   |   +-- Technics
+|   |   |
+|   |   +-- Maintenance and repair
+|   |
+|   +-- Fusion
+|   |   |
+|   |   +-- Technics
+|   |   |
+|   |   +-- Maintenance and repair
+|
++-- Chevrolet
+    |
+    +-- Dealers and garages
+    |
+    +-- Captiva
+    |   |
+    |   +-- Technics
+    |   |
+    |   +-- Maintenance and repair
+    |
+    +-- Impala
+        |
+        +-- Technics
+        |
+        +-- Maintenance and repair
+
+After marking forum "Announcements" as "Show in each folder" and both forums
+"Dealers and garages" as "Show in each subfolder" you'll get:
+
+Root
+|
++-- Announcements
+|
++-- Ford
+|   |
+|   +-- Announcements
+|   |
+|   +-- Dealers and garages
+|   |
+|   +-- Focus
+|   |   |
+|   |   +-- Announcements
+|   |   |
+|   |   +-- Dealers and garages
+|   |   |
+|   |   +-- Technics
+|   |   |
+|   |   +-- Maintenance and repair
+|   |
+|   +-- Fusion
+|   |   |
+|   |   +-- Announcements
+|   |   |
+|   |   +-- Dealers and garages
+|   |   |
+|   |   +-- Technics
+|   |   |
+|   |   +-- Maintenance and repair
+|
++-- Chevrolet
+    |
+    +-- Announcements
+    |
+    +-- Dealers and garages
+    |
+    +-- Captiva
+    |   |
+    |   +-- Announcements
+    |   |
+    |   +-- Dealers and garages
+    |   |
+    |   +-- Technics
+    |   |
+    |   +-- Maintenance and repair
+    |
+    +-- Impala
+        |
+        +-- Announcements
+        |
+        +-- Dealers and garages
+        |
+        +-- Technics
+        |
+        +-- Maintenance and repair
+
+
+FAQ:
+---
+
+Q: Is there a difference between "Show in each folder" and "Show in each
+   subfolder" for forums in root?
+
+A: No, there are treated in same manner.
+
+
+Q: Can I mark a forum anywhere in the tree as "Show in each folder"?
+
+A: Yes, but it's best practice to put the forum in root.
